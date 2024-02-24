@@ -2,7 +2,7 @@
 /* ------ funcion de inscriptar texto ----- */
 
 function encriptar() {
-  let mensaje = document.getElementById("texto").value;
+  let mensaje = document.getElementById("texto").value.toLowerCase();
   let encriptado = "";
 
   for(let i = 0; i < mensaje.length; i++){
@@ -31,7 +31,7 @@ function encriptar() {
 /* ------ funcion de desencriptar texto ----- */
 
 function desencriptar() {
-  let mensaje= document.getElementById("texto").value;
+  let mensaje = document.getElementById("texto").value.toLowerCase();
   let desencriptado = "";
 
   for(let i = 0; i < mensaje.length; i++){
