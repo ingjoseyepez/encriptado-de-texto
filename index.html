@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>ENCRIPTADO DE TEXTO</title>
+</head>
+
+<body>
+  <section class="contenedor">
+    <header>
+      <h1 id="titulo"></h1>
+    </header>
+    <div class="pantalla">
+      <div class="mensajes">
+        <textarea name="mensajes" id="texto" class="uno" placeholder="Mensajes" cols="30" rows="10"></textarea>
+      </div>
+      <div class="mensajes">
+        <textarea name="mensajes" id="resultado" class="dos" placeholder="Mensajes" cols="30" rows="10"
+          disabled></textarea>
+      </div>
+    </div>
+    <div class="accion">
+      <div class="btn_accion">
+        <button class="boton" onclick="encriptar()">ENCRIPTAR</button>
+        <button class="boton" onclick="desencriptar()">DESENCRIPTAR</button>
+      </div>
+      <div class="btn_copy">
+        <button class="copy" onclick="copiarTexto()">COPIAR</button>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  margin: 50px auto;
+  width: 70%;
+  height: 500px;
+  max-width: 1400px;
+  background-image: -webkit-linear-gradient(0deg, #D9E5E1 50%, #090B0B 50%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-shadow: -14px 20px 43px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -14px 20px 43px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: -14px 20px 43px 7px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor header {
+  width: 80%;
+  margin: 0px auto;
+  line-height: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1vw;
+  background-color: #00ff41;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contenedor .pantalla {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor .pantalla .mensajes {
+  margin-top: 20px;
+  width: 40%;
+}
+
+.contenedor .pantalla .uno {
+  border: 2px solid #090B0B;
+  background-color: #D9E5E1;
+}
+
+.contenedor .pantalla .dos {
+  border: 2px solid #D9E5E1;
+  background-color: #090B0B;
+}
+
+.contenedor .pantalla textarea {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+  max-height: 300px;
+  font-size: 15px;
+  padding: 10px;
+  color: #00ff41;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.contenedor .pantalla textarea::placeholder {
+  color: #00ff41;
+}
+
+.contenedor .accion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 5px;
+}
+
+.contenedor .accion .btn_accion {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .accion .boton {
+  background: #00ff41;
+  color: #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1vw;
+  border: none;
+  border-radius: 3px;
+  padding: 20px 10px;
+  margin: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.contenedor .accion .btn_copy {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.contenedor .accion .copy {
+  background: #00ff41;
+  color: #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1vw;
+  border: none;
+  border-radius: 3px;
+  padding: 20px 50px;
+  margin: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.contenedor .accion .copy:hover {
+  background: #008f11;
+}
+
+.contenedor .accion .boton:hover {
+  background: #008f11;
+}
+
+@media screen and (max-width: 768px) {
+
+  .contenedor {
+    height: 800px;
+    background-image: -webkit-linear-gradient(-90deg, #D9E5E1 50%, #090B0B 50%);
+  }
+
+  .contenedor header {
+    width: 90%;
+    font-size: 1.5vw;
+  }
+  .contenedor .pantalla{
+    height: 550px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .contenedor .pantalla .mensajes {
+    width: 80%;
+  }
+  .contenedor .accion {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px 5px;
+  }
+  .contenedor .accion .btn_accion {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .contenedor .accion .btn_copy {
+    width: 100%;
+    justify-content: center;
+  }
+  .contenedor .accion .boton {
+    font-size: 1.5vw;
+    padding: 10px 10px;
+  }
+  .contenedor .accion .copy {
+    font-size: 1.5vw;
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contenedor {
+    height: 900px;
+  }
+  .contenedor .pantalla{
+    height: 600px;
+  }
+  .contenedor .accion {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px 5px;
+  }
+  .contenedor .accion .btn_accion {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .contenedor .accion .btn_copy {
+    width: 100%;
+    justify-content: center;
+  }
+  .contenedor .accion .boton {
+    width: 80%;
+    font-size: 2vw;
+    padding: 10px 30px;
+  }
+  .contenedor .accion .copy {
+    width: 80%;
+    font-size: 2vw;
+    padding: 10px 30px;
+  }
+}
